@@ -1,0 +1,5 @@
+alias="NAME"
+log-level=debug
+log-file=/home/user/.lightning/bitcoin/debug.log
+bind-addr=
+announce-addr="IP"
