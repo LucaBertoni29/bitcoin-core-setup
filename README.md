@@ -31,9 +31,6 @@ Copia e incolla le seguanti informazioni, infine salva
 ```bash
 server=1
 txindex=1
-
-# Specify your own public IP address.
-externalip="IP"
 ```
 
 ### Avvia Bitcoin
