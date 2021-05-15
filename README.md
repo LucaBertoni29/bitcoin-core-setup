@@ -2,26 +2,26 @@
 
 Repository creata per contenere tutti i file di configurazione e relativi servizi per implementare un nodo Bitcoin, Lightning e Server Electrum
 
-### A step-by-step guide for setting up the perfect Bitcoin box on Ubuntu. Including:
+### Guida step-by-step per installare un nodo Bitcoin su Ubuntu
 * Services:
   * [Bitcoin Core](https://github.com/BitSocial-lb/Node/blob/master/README.md#bitcoin-core)
 
 ## Bitcoin Core
 
-### Installing
+### Installazione
 ```bash
 
-# Download binaries
+# Scarica il binario
 wget https://bitcoincore.org/bin/bitcoin-core-0.21.0/bitcoin-0.21.0-x86_64-linux-gnu.tar.gz &&
 
-# Unpack binaries
+# Estrai il binario
 tar xvf bitcoin-0.21.0-x86_64-linux-gnu.tar.gz &&
 
-# Install binaries
+# Installa il binaries
 sudo cp bitcoin-0.21.0/bin/* /usr/bin
 ```
-### Configuring
-Create and edit `bitcoin.conf`
+### Configurazione
+Crea e modifica `bitcoin.conf`
 
 ```bash
 mkdir -p ~/.bitcoin &&
