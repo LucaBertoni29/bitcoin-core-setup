@@ -36,6 +36,11 @@ txindex=1
 externalip="IP"
 ```
 
+### Running
+```bash
+bitcoind
+```
+
 To test bitcoind is running:
 ```bash
 bitcoin-cli getblockchaininfo
