@@ -47,16 +47,6 @@ txindex=1
 # blocksonly=1
 ```
 
-```
-
-Copy the `rpcauth=...` line to `~/.bitcoin/bitcoin.conf` and take note of your password.
--->
-
-### Running
-```bash
-bitcoind
-```
-
 To test bitcoind is running:
 ```bash
 bitcoin-cli getblockchaininfo
