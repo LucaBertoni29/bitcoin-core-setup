@@ -1,4 +1,4 @@
-# Node
+# Nodo Bitcoin
 
 Repository creata per contenere tutti i file di configurazione e relativi servizi per implementare un nodo Bitcoin, Lightning e Server Electrum
 
@@ -17,17 +17,17 @@ wget https://bitcoincore.org/bin/bitcoin-core-0.21.0/bitcoin-0.21.0-x86_64-linux
 # Estrai il binario
 tar xvf bitcoin-0.21.0-x86_64-linux-gnu.tar.gz &&
 
-# Installa il binaries
+# Installa il binario
 sudo cp bitcoin-0.21.0/bin/* /usr/bin
 ```
 ### Configurazione
-Crea e modifica `bitcoin.conf`
+Crea e modifica il file di configurazione `bitcoin.conf`
 
 ```bash
 mkdir -p ~/.bitcoin &&
 gedit ~/.bitcoin/bitcoin.conf
 ```
-Add the following and save:
+Copia e incolla le seguanti informazioni, infine salva
 ```bash
 server=1
 txindex=1
@@ -36,12 +36,12 @@ txindex=1
 externalip="IP"
 ```
 
-### Running
+### Avvia Bitcoin
 ```bash
 bitcoind
 ```
 
-To test bitcoind is running:
+Testa se funziona
 ```bash
 bitcoin-cli getblockchaininfo
 ```
