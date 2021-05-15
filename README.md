@@ -2,6 +2,12 @@
 
 Repository creata per contenere tutti i file di configurazione e relativi servizi per implementare un nodo Bitcoin, Lightning e Server Electrum
 
+### A step-by-step guide for setting up the perfect Bitcoin box on Ubuntu. Including:
+* [Preparing the environment](https://github.com/bitembassy/home-node/blob/master/README.md#preparing-the-environment)
+* Services:
+  * [Tor](https://github.com/bitembassy/home-node/blob/master/README.md#tor)
+  * [Bitcoin Core](https://github.com/BitSocial-lb/Node/blob/master/README.md#bitcoin-core)
+
 ## Bitcoin Core
 
 ### Installing
