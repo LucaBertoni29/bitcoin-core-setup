@@ -3,7 +3,7 @@
 Repository creata per contenere tutti i file di configurazione e relativi servizi per implementare un nodo Bitcoin, Lightning e Server Electrum
 
 ### Guida step-by-step per installare un nodo Bitcoin su Ubuntu
-* Services:
+* Servizi:
   * [Bitcoin Core](https://github.com/BitSocial-lb/Node/blob/master/README.md#bitcoin-core)
 
 ## Bitcoin Core
