@@ -25,7 +25,7 @@ Crea e modifica il file di configurazione `bitcoin.conf`
 
 ```bash
 mkdir -p ~/.bitcoin &&
-gedit ~/.bitcoin/bitcoin.conf
+nano ~/.bitcoin/bitcoin.conf
 ```
 Copia e incolla le seguanti informazioni, infine salva
 ```bash
