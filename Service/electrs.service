@@ -1,0 +1,17 @@
+[Unit]
+Description=Electrs
+After=bitcoind.service
+
+[Service]
+WorkingDirectory=/home/luca/electrs
+ExecStart=/home/luca/electrs/target/release/electrs --db-dir ./db --electrum-rpc-addr="0.0.0.0:50001"
+User=luca
+Group=luca
+Type=simple
+KillMode=process
+TimeoutSec=60
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
