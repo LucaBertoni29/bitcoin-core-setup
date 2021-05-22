@@ -6,8 +6,8 @@ Per poter implementare un nodo Bitcoin è richiesta almeno una capacità di 500G
 
 ### Guida step-by-step per installare un nodo Bitcoin su Ubuntu
 * Servizi:
-  * [Bitcoin Core](https://github.com/BitSocial-lb/BitcoinCore/blob/master/README.md#bitcoin-core)
-  * [Block Explorer (btc-rpc-explorer)](https://github.com/BitSocial-lb/BitcoinCore/blob/master/README.md#btc-rpc-explorer)
+  * [Bitcoin Core](#bitcoin-core)
+  * [Block Explorer (btc-rpc-explorer)](#btc-rpc-explorer)
 
 ## Bitcoin Core
 
