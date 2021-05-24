@@ -18,7 +18,7 @@ Per poter implementare un nodo Bitcoin è richiesta almeno una capacità di 500G
 wget https://bitcoincore.org/bin/bitcoin-core-0.21.0/bitcoin-0.21.0-x86_64-linux-gnu.tar.gz
 
 # Estrai il binario
-tar xvf bitcoin-0.21.0-x86_64-linux-gnu.tar.gz
+tar -xvf bitcoin-0.21.0-x86_64-linux-gnu.tar.gz
 
 # copia tutto il contenuto della cartella nella directory /usr/bin
 sudo cp bitcoin-0.21.0/bin/* /usr/bin
