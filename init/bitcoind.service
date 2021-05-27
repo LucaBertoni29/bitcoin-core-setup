@@ -9,6 +9,8 @@
 # specified as arguments in ExecStart= will override those in the
 # config file.
 
+#Sostituire user con il vostro nome utente (quello con cui vi loggate su linux)
+
 [Unit]
 Description=Bitcoin daemon
 Documentation=https://github.com/bitcoin/bitcoin/blob/master/doc/init.md
@@ -20,8 +22,8 @@ Wants=network-online.target
 [Service]
 ExecStart=/usr/local/bin/bitcoind -daemon \
                             -pid=/run/bitcoind/bitcoind.pid \
-                            -conf=/home/luca/.bitcoin/bitcoin.conf \
-                            -datadir=/home/luca/.bitcoin
+                            -conf=/home/user/.bitcoin/bitcoin.conf \
+                            -datadir=/home/user/.bitcoin
 
 # Make sure the config directory is readable by the service user
 #PermissionsStartOnly=true
@@ -40,8 +42,8 @@ TimeoutStopSec=600
 ####################################
 
 # Run as bitcoin:bitcoin
-User=luca
-Group=luca
+User=user
+Group=user
 
 # /run/bitcoind
 RuntimeDirectory=bitcoind
