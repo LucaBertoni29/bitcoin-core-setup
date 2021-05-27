@@ -2,7 +2,7 @@
 
 Repository creata per contenere tutti i file di configurazione e relativi servizi per implementare un nodo Bitcoin, Lightning e Server Electrum
 
-Per poter implementare un nodo Bitcoin è richiesta almeno una capacità di 500GB, consigliato almeno 1TB
+Per poter implementare un nodo Bitcoin è richiesta almeno una capacità di 500GB, consigliato 1TB
 
 ### Guida step-by-step per installare un nodo Bitcoin su Ubuntu
 * Servizi:
