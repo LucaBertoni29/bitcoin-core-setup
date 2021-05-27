@@ -2,9 +2,11 @@
 Description=Electrs
 After=bitcoind.service
 
+#Sostituire user con il vostro nome utente (quello con cui vi loggate su linux)
+
 [Service]
 WorkingDirectory=/home/luca/electrs
-ExecStart=/home/luca/electrs/target/release/electrs --db-dir ./db --electrum-rpc-addr="0.0.0.0:50001"
+ExecStart=/home/user/electrs/target/release/electrs --db-dir ./db --electrum-rpc-addr="0.0.0.0:50001"
 User=luca
 Group=luca
 Type=simple
