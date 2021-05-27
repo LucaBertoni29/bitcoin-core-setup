@@ -81,4 +81,5 @@ Apri http://localhost:3002/node-status oppure nel nostro caso http://"IP":3002/n
 ## Acknowledgements
 
 This is an Italian translation of [home-node](https://github.com/bitembassy/home-node)
+
 I personally thank [bitembassy Team](https://github.com/bitembassy) for the great work
