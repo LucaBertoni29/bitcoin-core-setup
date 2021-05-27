@@ -3,9 +3,11 @@ Description=Spark Lightning Wallet
 Requires=lightningd.service
 After=lightningd.service
 
+#Sostituire user con il vostro nome utente (quello con cui vi loggate su linux)
+
 [Service]
-User=luca
-Group=luca
+User=user
+Group=user
 Restart=on-failure
 
 ExecStart=/usr/local/bin/spark-wallet -i 0.0.0.0 --no-tls
