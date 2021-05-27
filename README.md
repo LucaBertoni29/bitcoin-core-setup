@@ -2,7 +2,7 @@
 
 Repository creata per contenere tutti i file di configurazione e relativi servizi per implementare un nodo Bitcoin, Lightning e Server Electrum
 
-Per poter implementare un nodo Bitcoin è richiesta almeno una capacità di 500GB
+Per poter implementare un nodo Bitcoin è richiesta almeno una capacità di 500GB, consigliato almeno 1TB
 
 ### Guida step-by-step per installare un nodo Bitcoin su Ubuntu
 * Servizi:
@@ -76,4 +76,4 @@ Visita [btc-rpc-explorer docs](https://github.com/janoside/btc-rpc-explorer) per
 btc-rpc-explorer
 ```
 
-Apri http://localhost:3002/node-status oppure nel nostro caso http://"IP_del_PC":3002/node-status
+Apri http://localhost:3002/node-status oppure nel nostro caso http://"IP":3002/node-status
