@@ -3,8 +3,10 @@ Description=btc-rpc-explorer
 After=bitcoind.service
 Requires=bitcoind.service
 
+#Sostituire user con il vostro nome utente (quello con cui vi loggate su linux)
+
 [Service]
-EnvironmentFile=-/home/luca/.config/btc-rpc-explorer.env
+EnvironmentFile=-/home/user/.config/btc-rpc-explorer.env
 ExecStart=/usr/local/bin/btc-rpc-explorer
 
 RuntimeDirectory=btc-rpc-explorer
