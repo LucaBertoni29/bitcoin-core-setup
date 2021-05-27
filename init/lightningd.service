@@ -14,14 +14,16 @@ After=bitcoind.service
 Wants=network-online.target
 After=network-online.target
 
+#Sostituire user con il vostro nome utente (quello con cui vi loggate su linux)
+
 [Service]
-ExecStart=/usr/local/bin/lightningd --daemon --conf /home/luca/.lightning/config --pid-file=/run/lightningd/lightningd.pid
+ExecStart=/usr/local/bin/lightningd --daemon --conf /home/user/.lightning/config --pid-file=/run/lightningd/lightningd.pid
 
 # Creates /run/lightningd owned by bitcoin
 RuntimeDirectory=lightningd
 
-User=luca
-Group=luca
+User=user
+Group=user
 Type=forking
 PIDFile=/run/lightningd/lightningd.pid
 Restart=on-failure
