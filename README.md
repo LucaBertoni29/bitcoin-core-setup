@@ -114,8 +114,15 @@ nano ~/.lightning/config
 ```
 Copia e incolla le seguanti informazioni, infine salva
 ```bash
-server=1
-txindex=1
+#Sostituire user con il vostro nome utente (quello con cui vi loggate su linux)
+
+alias="NOME_DEL_NODO"
+log-level=debug
+log-file=/home/user/.lightning/bitcoin/debug.log
+
+#Nel caso abbiate un IP Statico, altrimenti cancellate la parte sottostante
+bind-addr=
+announce-addr="IP"
 ```
 Puoi trovarlo direttamente nella repository Configuration File 
 
