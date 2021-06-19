@@ -4,10 +4,11 @@ Repository creata per contenere tutti i file di configurazione e relativi serviz
 
 Per poter implementare un nodo Bitcoin è richiesta almeno una capacità di 500GB, consigliato 1TB
 
-### Guida step-by-step per installare un nodo Bitcoin su Ubuntu
+### Guida step-by-step per installare un nodo Bitcoin e Lightning su Ubuntu
 * Servizi:
   * [Bitcoin Core](#bitcoin-core)
   * [Block Explorer (btc-rpc-explorer)](#btc-rpc-explorer)
+  * [c-lightning](#c-lightning)
 
 ## Bitcoin Core
 
@@ -79,7 +80,7 @@ btc-rpc-explorer
 Apri http://localhost:3002/node-status oppure nel nostro caso http://"IP":3002/node-status
 
 
-## C-lightning
+## c-lightning
 
 ### Installazione
 ```bash
@@ -102,17 +103,17 @@ sudo make install
 
 ### Configurazione
 
-Configura .env `~/.config/btc-rpc-explorer.env` 
+Scarica il file .config e salvalo nella cartella  `~/.lightnind/` 
 Puoi trovarlo direttamente nella repository Configuration File 
 
-Visita [btc-rpc-explorer docs](https://github.com/janoside/btc-rpc-explorer) per saperne di più.
+
+
+Visita [c-lighting](https://github.com/ElementsProject/lightning/) per saperne di più.
 
 ### Avvia
 ```bash
-btc-rpc-explorer
+lightningd
 ```
-
-Apri http://localhost:3002/node-status oppure nel nostro caso http://"IP":3002/node-status
 
 ## Acknowledgements
 
