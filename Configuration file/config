@@ -4,6 +4,6 @@ alias="NOME_DEL_NODO"
 log-level=debug
 log-file=/home/user/.lightning/bitcoin/debug.log
 
-#Nel caso abbiate in IP Statico, altrimenti cancellate la parte sottostante
+#Nel caso abbiate un IP Statico, altrimenti cancellate la parte sottostante
 bind-addr=
 announce-addr="IP"
