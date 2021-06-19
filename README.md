@@ -106,10 +106,18 @@ sudo make install
 
 ### Configurazione
 
-Scarica il file .config e salvalo nella cartella  `~/.lightnind/` 
+Crea e modifica il file di configurazione
+
+```bash
+mkdir -p ~/.lightning
+nano ~/.lightning/config
+```
+Copia e incolla le seguanti informazioni, infine salva
+```bash
+server=1
+txindex=1
+```
 Puoi trovarlo direttamente nella repository Configuration File 
-
-
 
 Visita [c-lighting](https://github.com/ElementsProject/lightning/) per saperne di più.
 
