@@ -115,6 +115,11 @@ Visita [c-lighting](https://github.com/ElementsProject/lightning/) per saperne d
 lightningd
 ```
 
+Testa se funziona
+```bash
+lightning-cli getinfo
+```
+
 ## Acknowledgements
 
 This is an Italian translation of [home-node](https://github.com/bitembassy/home-node)
