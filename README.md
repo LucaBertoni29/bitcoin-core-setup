@@ -78,6 +78,42 @@ btc-rpc-explorer
 
 Apri http://localhost:3002/node-status oppure nel nostro caso http://"IP":3002/node-status
 
+
+## C-lightning
+
+### Installazione
+```bash
+# Dipendenze
+sudo apt-get update
+sudo apt-get install -y \
+  autoconf automake build-essential git libtool libgmp-dev \
+  libsqlite3-dev python3 python3-mako net-tools zlib1g-dev libsodium-dev \
+  gettext
+
+# Download
+git clone https://github.com/ElementsProject/lightning.git
+cd lightning
+
+# Installa c-lightning
+./configure
+make
+sudo make install
+```
+
+### Configurazione
+
+Configura .env `~/.config/btc-rpc-explorer.env` 
+Puoi trovarlo direttamente nella repository Configuration File 
+
+Visita [btc-rpc-explorer docs](https://github.com/janoside/btc-rpc-explorer) per saperne di più.
+
+### Avvia
+```bash
+btc-rpc-explorer
+```
+
+Apri http://localhost:3002/node-status oppure nel nostro caso http://"IP":3002/node-status
+
 ## Acknowledgements
 
 This is an Italian translation of [home-node](https://github.com/bitembassy/home-node)
