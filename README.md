@@ -124,9 +124,6 @@ log-file=/home/user/.lightning/bitcoin/debug.log
 bind-addr=
 announce-addr="IP"
 ```
-Puoi trovarlo direttamente nella repository Configuration File 
-
-Visita [c-lighting](https://github.com/ElementsProject/lightning/) per saperne di più.
 
 ### Avvia
 ```bash
