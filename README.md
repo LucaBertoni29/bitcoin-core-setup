@@ -90,6 +90,9 @@ sudo apt-get install -y \
   autoconf automake build-essential git libtool libgmp-dev \
   libsqlite3-dev python3 python3-mako net-tools zlib1g-dev libsodium-dev \
   gettext
+  
+# Pulisci da eventuali installazioni precedenti
+rm -rf ~/lightning &&
 
 # Download
 git clone https://github.com/ElementsProject/lightning.git
