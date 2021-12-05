@@ -79,7 +79,7 @@ Scarica li script presenti nella cartella btc-rpc-explorer-script, salva nella c
 chmod 775 explorer.sh
 chmod 775 start-explorer.sh 
 
-./start-explorer
+./start-explorer.sh
 
 ```
 
