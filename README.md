@@ -52,17 +52,17 @@ bitcoin-cli getblockchaininfo
 ### Installazione
 ```bash
 # Pulisci da eventuali installazioni precedenti
-rm -rf ~/btc-rpc-explorer &&
+rm -rf ~/btc-rpc-explorer
 
 # Download
-git clone https://github.com/janoside/btc-rpc-explorer ~/btc-rpc-explorer && cd ~/btc-rpc-explorer &&
-git checkout 1ca6f54b93a56d942a90f3e0072265c9df3b9e6c &&
-
-# Verifica la firma -  "Good signature from Dan Janosik <dan@47.io>"
-git verify-commit HEAD &&
+git clone https://github.com/janoside/btc-rpc-explorer
+cd ~/btc-rpc-explorer
 
 # Installa il Block Explorer
-npm install -g
+npm install
+
+# Avvia il Block Explorer
+npm start
 ```
 
 ### Configurazione
@@ -73,8 +73,14 @@ Puoi trovarlo direttamente nella repository Configuration File
 Visita [btc-rpc-explorer docs](https://github.com/janoside/btc-rpc-explorer) per saperne di più.
 
 ### Avvia
+
+Scarica li script presenti nella cartella btc-rpc-explorer-script, salva nella cartella btc-rpc-explorer solo explorer.sh, gli altri script lasciali nella directory principale
 ```bash
-btc-rpc-explorer
+chmod 775 explorer.sh
+chmod 775 start-explorer.sh 
+
+./start-explorer
+
 ```
 
 Apri http://localhost:3002/node-status oppure nel nostro caso http://"IP":3002/node-status
