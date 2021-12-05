@@ -56,6 +56,7 @@ screen --version
 # Se non è installato lanciare il comando
 
 sudo apt install screen
+```
 
 
 ### Installazione
