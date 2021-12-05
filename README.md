@@ -76,11 +76,20 @@ Visita [btc-rpc-explorer docs](https://github.com/janoside/btc-rpc-explorer) per
 
 Scarica li script presenti nella cartella btc-rpc-explorer-script, salva nella cartella btc-rpc-explorer solo explorer.sh, gli altri script lasciali nella directory principale
 ```bash
-chmod 775 explorer.sh
-chmod 775 start-explorer.sh 
+chmod +x explorer.sh
+chmod +x start-explorer.sh 
+```
 
-./start-explorer.sh
+### Avvia lo script
+```bash
+./start-mining.sh
+```
+### Avvio automatico in caso di reboot
+```bash
+crontab -e
 
+#incollare in fondo al file
+@reboot    ~/start-boot.sh
 ```
 
 Apri http://localhost:3002/node-status oppure nel nostro caso http://"IP":3002/node-status
