@@ -82,7 +82,7 @@ chmod +x start-explorer.sh
 
 ### Avvia lo script
 ```bash
-./start-mining.sh
+./start-explorer.sh 
 ```
 ### Avvio automatico in caso di reboot
 ```bash
