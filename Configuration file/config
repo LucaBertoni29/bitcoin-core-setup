@@ -7,3 +7,9 @@ log-file=/home/user/.lightning/bitcoin/debug.log
 #Nel caso abbiate un IP Statico, altrimenti cancellate la parte sottostante
 bind-addr=
 announce-addr="IP"
+
+#Se volte configurare anche RTL
+plugin=/home/user/c-lightning-REST/plugin.js
+rest-port=3001
+rest-docport=4001
+rest-protocol=https
