@@ -6,7 +6,7 @@ After=bitcoind.service
 
 [Service]
 WorkingDirectory=/home/luca/electrs
-ExecStart=/home/user/electrs/target/release/electrs --db-dir ./db --electrum-rpc-addr="0.0.0.0:50001"
+ExecStart=/home/user/electrs/target/release/electrs
 User=luca
 Group=luca
 Type=simple
