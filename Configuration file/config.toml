@@ -11,7 +11,7 @@
 # File where bitcoind stores the cookie, usually file .cookie in its datadir
 #cookie_file = "/home/user/.bitcoin/.cookie"
 
-auth="vostro utente":"vostra password"
+auth="vostro utente:vostra password"
 
 
 # The listening RPC address of bitcoind, port is usually 8332
