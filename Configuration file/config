@@ -1,5 +1,7 @@
 #Sostituire user con il vostro nome utente (quello con cui vi loggate su linux)
 
+bitcoin-rpcuser="vostro utente"
+bitcoin-rpcpassword="vostra password"
 alias="NOME_DEL_NODO"
 log-level=debug
 log-file=/home/user/.lightning/bitcoin/debug.log
