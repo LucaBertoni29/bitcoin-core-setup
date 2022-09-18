@@ -1,0 +1,28 @@
+{
+  "multiPass": "password",
+  "port": "3000",
+  "SSO": {
+    "rtlSSO": 0,
+    "rtlCookiePath": "",
+    "logoutRedirectLink": ""
+  },
+  "nodes": [
+    {
+      "index": 1,
+      "lnNode": "c-lightning Mainnet",
+      "lnImplementation": "CLT",
+      "Authentication": {
+        "macaroonPath": "/home/user/c-lightning-REST/certs"
+      },
+      "Settings": {
+        "userPersona": "MERCHANT",
+        "themeMode": "NIGHT",
+        "themeColor": "INDIGO",
+        "bitcoindConfigPath": "",
+        "logLevel": "INFO",
+        "fiatConversion": false,
+        "lnServerUrl": "https://IP:3001"
+      }
+    }
+  ]
+}
