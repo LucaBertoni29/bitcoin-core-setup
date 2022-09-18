@@ -78,7 +78,7 @@ npm start
 ### Configurazione
 
 Configura .env `~/.config/btc-rpc-explorer.env` 
-Puoi trovarlo direttamente nella repository Configuration File 
+Puoi trovarlo direttamente nella repository config
 
 Visita [btc-rpc-explorer docs](https://github.com/janoside/btc-rpc-explorer) per saperne di più.
 
