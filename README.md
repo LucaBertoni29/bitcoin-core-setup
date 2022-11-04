@@ -9,6 +9,7 @@ Per poter implementare un nodo Bitcoin è richiesta almeno una capacità di 500G
   * [Bitcoin Core](#bitcoin-core)
   * [Block Explorer (btc-rpc-explorer)](#btc-rpc-explorer)
   * [C-lightning](#c-lightning)
+  * [Client-Side](#client-side)
 
 ## Bitcoin Core
 
