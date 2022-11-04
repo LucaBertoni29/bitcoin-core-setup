@@ -188,4 +188,5 @@ Copia e incolla le seguanti informazioni, infine salva
 Nel caso di lightning potete comunque utilizzare il servizio presente nella cartella init andando a elinimare o commentare all'inizio del file le seguenti righe 
 
 Requires=bitcoind.service
+
 After=bitcoind.service
