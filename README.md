@@ -7,7 +7,7 @@ Per poter implementare un nodo Bitcoin è richiesta almeno una capacità di 500G
 ### Guida step-by-step per installare un nodo Bitcoin e Lightning su Ubuntu
 * Servizi:
   * [Bitcoin Core](#bitcoin-core)
-  * [Block Explorer (btc-rpc-explorer)](#btc-rpc-explorer)
+  * [Block Explorer](#btc-rpc-explorer)
   * [C-lightning](#c-lightning)
   * [Client-Side](#client-side)
 
