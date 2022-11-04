@@ -160,7 +160,7 @@ Testa se funziona
 lightning-cli getinfo
 ```
 
-### Client-Side
+## Client-Side
 
 Per collegarsi al proprio nodo da riga di comando da un PC client vi bastera scaricare Bitcoin Core, non eseguire bitcoind ma semplicemente creare un file di configurazione cosi come segue ed utilizzare semplicemente bitcoin-cli
 
