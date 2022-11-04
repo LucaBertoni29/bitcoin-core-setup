@@ -176,7 +176,8 @@ Copia e incolla le seguanti informazioni, infine salva
 Lo stesso discorso vale per il client lightning-cli 
 
 ```bash
-
+mkdir -p ~/.lightning
+nano ~/.lightning/config
 ```
 Copia e incolla le seguanti informazioni, infine salva
 ```bash
