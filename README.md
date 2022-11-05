@@ -171,7 +171,9 @@ nano ~/.bitcoin/bitcoin.conf
 ```
 Copia e incolla le seguanti informazioni, infine salva
 ```bash
-
+rpcconnect="IP del nodo in LAN"
+rpcuser="vostro utente"
+rpcpassword="vostra password"
 ```
 
 Lo stesso discorso vale per il client lightning-cli 
