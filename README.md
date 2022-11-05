@@ -184,7 +184,12 @@ nano ~/.lightning/config
 ```
 Copia e incolla le seguanti informazioni, infine salva
 ```bash
-
+bitcoin-rpcuser="vostro utente"
+bitcoin-rpcpassword="vostra password"
+bitcoin-rpcconnect="IP del nodo in LAN"
+alias="scegliete un nome"
+log-level=debug
+log-file=/home/user/.lightning/bitcoin/debug.log
 ```
 
 Nel caso di lightning potete comunque utilizzare il servizio presente nella cartella init andando a elinimare o commentare all'inizio del file le seguenti righe 
