@@ -5,7 +5,7 @@ After=lightningd.service
 
 
 [Service]
-ExecStart=/usr/bin/node /home/luca/RTL/rtl
+ExecStart=/usr/bin/node /home/user/RTL/rtl
 User=root
 Restart=always
 TimeoutSec=120
