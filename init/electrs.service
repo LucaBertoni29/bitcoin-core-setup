@@ -5,10 +5,10 @@ After=bitcoind.service
 #Sostituire user con il vostro nome utente (quello con cui vi loggate su linux)
 
 [Service]
-WorkingDirectory=/home/luca/electrs
+WorkingDirectory=/home/user/electrs
 ExecStart=/home/user/electrs/target/release/electrs
-User=luca
-Group=luca
+User=user
+Group=user
 Type=simple
 KillMode=process
 TimeoutSec=60
