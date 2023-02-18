@@ -89,7 +89,7 @@ cd /etc/systemd/system
 sudo nano fulcrum.service
 ```
 
-Abilita il servizio, fallo partire, assisurati che funziona e infine attendi il completamento
+Abilita il servizio, fallo partire, assisurati che funzioni e infine attendi il completamento
 
 ```bash
 sudo systemctl enable fulcrum.service
