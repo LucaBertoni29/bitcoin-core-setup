@@ -7,7 +7,6 @@ Per poter implementare un nodo Bitcoin è richiesta almeno una capacità di 700G
 ### Guida step-by-step per installare un nodo Bitcoin e Lightning su Ubuntu
 * Servizi:
   * [Bitcoin Core](#bitcoin-core)
-  * [Block Explorer](#btc-rpc-explorer)
   * [Electrum Server](#electrum-server) 
   * [C-lightning](#c-lightning)
   * [Client-Side](#client-side)
@@ -97,64 +96,6 @@ sudo systemctl enable fulcrum.service
 sudo systemctl start fulcrum.service
 sudo systemctl status fulcrum.service
 ```
-
-## btc-rpc-explorer
-
-### Installazione Screen (se non istallato)
-```bash
-screen --version
-
-# Se non è installato lanciare il comando
-
-sudo apt install screen
-```
-
-
-### Installazione
-```bash
-# Pulisci da eventuali installazioni precedenti
-rm -rf ~/btc-rpc-explorer
-
-# Download
-git clone https://github.com/janoside/btc-rpc-explorer
-cd ~/btc-rpc-explorer
-
-# Installa il Block Explorer
-npm install
-
-# Avvia il Block Explorer
-npm start
-```
-
-### Configurazione
-
-Configura .env `~/.config/btc-rpc-explorer.env` 
-Puoi trovarlo direttamente nella repository config
-
-Visita [btc-rpc-explorer docs](https://github.com/janoside/btc-rpc-explorer) per saperne di più.
-
-### Avvia
-
-Scarica li script presenti nella cartella btc-rpc-explorer-script, salva nella cartella btc-rpc-explorer solo explorer.sh, gli altri script lasciali nella directory principale
-```bash
-chmod +x explorer.sh
-chmod +x start-explorer.sh 
-```
-
-### Avvia lo script
-```bash
-./start-explorer.sh 
-```
-### Avvio automatico in caso di reboot
-```bash
-crontab -e
-
-#incollare in fondo al file
-@reboot    ~/start-boot.sh
-```
-
-Apri http://localhost:3002/node-status oppure nel nostro caso http://"IP":3002/node-status
-
 
 ## c-lightning
 
