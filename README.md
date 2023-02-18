@@ -2,7 +2,7 @@
 
 Repository creata per contenere tutti i file di configurazione e relativi servizi per implementare un nodo Bitcoin e Lightning
 
-Per poter implementare un nodo Bitcoin è richiesta almeno una capacità di 500GB, consigliato 1TB
+Per poter implementare un nodo Bitcoin è richiesta almeno una capacità di 700GB, consigliato 1TB
 
 ### Guida step-by-step per installare un nodo Bitcoin e Lightning su Ubuntu
 * Servizi:
@@ -75,7 +75,7 @@ mv Fulcrum-1.9.0-x86_64-linux/* /home/luca/fulcrum
 
 ### Configurazione
 
-Rinomina e modifica il file di configurazione `fulcrum.conf`, puoi trovare il file nella cartella init
+Rinomina e modifica il file di configurazione `fulcrum.conf`, puoi trovare il file nella cartella config
 
 ```bash
 mv fulcrum-example-config.conf fulcrum.conf
@@ -90,8 +90,8 @@ cd /etc/systemd/system
 sudo nano fulcrum.service
 ```
 
-Abilita il servizio, fallo partire e assisurati che funziona e attendi il completamento
-Il servizio lo puoi trovare nella cartella init
+Abilita il servizio, fallo partire, assisurati che funziona e infine attendi il completamento
+
 ```bash
 sudo systemctl enable fulcrum.service
 sudo systemctl start fulcrum.service
