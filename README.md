@@ -8,6 +8,7 @@ Per poter implementare un nodo Bitcoin è richiesta almeno una capacità di 500G
 * Servizi:
   * [Bitcoin Core](#bitcoin-core)
   * [Block Explorer](#btc-rpc-explorer)
+  * [Electrum Server](#electrum-server) 
   * [C-lightning](#c-lightning)
   * [Client-Side](#client-side)
 
@@ -46,6 +47,53 @@ bitcoind
 Testa se funziona
 ```bash
 bitcoin-cli getblockchaininfo
+```
+
+## Electrum Server
+
+# Crea la cartella fulcrum e genera un certificato ssl
+
+```bash
+mkdir fulcrum
+cd fulcrum
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+```
+
+# Crea la cartella fulcrum_db che conterrà il database
+```bash
+mkdir fulcrum_db
+```
+
+### Installazione
+
+# Scarica il binario, estrailo e copialo nella cartella fulcrum
+```bash
+wget https://github.com/cculianu/Fulcrum/releases/download/v1.9.0/Fulcrum-1.9.0-x86_64-linux.tar.gz
+tar xvf Fulcrum-1.9.0-x86_64-linux.tar.gz
+mv Fulcrum-1.9.0-x86_64-linux/* /home/luca/fulcrum
+```
+
+### Configurazione
+Rinomina e modifica il file di configurazione `fulcrum.conf`, puoi trovare il file nella cartella init
+
+```bash
+mv fulcrum-example-config.conf fulcrum.conf
+nano fulcrum.conf
+
+### Configurazione
+Crea e modifica il file di configurazione `fulcrum.service` che puoi trovarlo nella cartella init
+
+```bash
+cd /etc/systemd/system
+sudo nano fulcrum.service
+```
+
+Abilita il servizio, fallo partire e assisurati che funziona e attendi il completamento
+Il servizio lo puoi trovare nella cartella init
+```bash
+sudo systemctl enable fulcrum.service
+sudo systemctl start fulcrum.service
+sudo systemctl status fulcrum.service
 ```
 
 ## btc-rpc-explorer
