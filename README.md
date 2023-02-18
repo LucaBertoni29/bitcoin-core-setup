@@ -70,7 +70,7 @@ Scarica il binario, estrailo e copialo nella cartella fulcrum
 ```bash
 wget https://github.com/cculianu/Fulcrum/releases/download/v1.9.0/Fulcrum-1.9.0-x86_64-linux.tar.gz
 tar xvf Fulcrum-1.9.0-x86_64-linux.tar.gz
-mv Fulcrum-1.9.0-x86_64-linux/* /home/luca/fulcrum
+mv Fulcrum-1.9.0-x86_64-linux/* /home/user/fulcrum
 ```
 
 ### Configurazione
