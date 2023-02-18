@@ -51,7 +51,7 @@ bitcoin-cli getblockchaininfo
 
 ## Electrum Server
 
-# Crea la cartella fulcrum e genera un certificato ssl
+Crea la cartella fulcrum e genera un certificato ssl
 
 ```bash
 mkdir fulcrum
@@ -59,14 +59,14 @@ cd fulcrum
 openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
 ```
 
-# Crea la cartella fulcrum_db che conterrà il database
+Crea la cartella fulcrum_db che conterrà il database
 ```bash
 mkdir fulcrum_db
 ```
 
 ### Installazione
 
-# Scarica il binario, estrailo e copialo nella cartella fulcrum
+Scarica il binario, estrailo e copialo nella cartella fulcrum
 ```bash
 wget https://github.com/cculianu/Fulcrum/releases/download/v1.9.0/Fulcrum-1.9.0-x86_64-linux.tar.gz
 tar xvf Fulcrum-1.9.0-x86_64-linux.tar.gz
@@ -74,11 +74,13 @@ mv Fulcrum-1.9.0-x86_64-linux/* /home/luca/fulcrum
 ```
 
 ### Configurazione
+
 Rinomina e modifica il file di configurazione `fulcrum.conf`, puoi trovare il file nella cartella init
 
 ```bash
 mv fulcrum-example-config.conf fulcrum.conf
 nano fulcrum.conf
+```
 
 ### Configurazione
 Crea e modifica il file di configurazione `fulcrum.service` che puoi trovarlo nella cartella init
