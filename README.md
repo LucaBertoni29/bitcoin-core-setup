@@ -183,8 +183,9 @@ log-level=debug
 log-file=/home/user/.lightning/bitcoin/debug.log
 ```
 
-Nel caso di lightning potete comunque utilizzare il servizio presente nella cartella init andando a elinimare o commentare all'inizio del file le seguenti righe 
+Nel caso di lightning potete comunque utilizzare il servizio presente nella cartella init andando a elinimare o commentare all'inizio del file le seguenti righe
 
+```bash
 Requires=bitcoind.service
-
 After=bitcoind.service
+```
