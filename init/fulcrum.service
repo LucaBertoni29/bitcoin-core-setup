@@ -1,0 +1,13 @@
+fulcrum.service
+[Unit]
+Description=Fulcrum
+After=network.target
+
+[Service]
+ExecStart=/home/user/fulcrum/Fulcrum /home/user/fulcrum/fulcrum.conf
+User=user
+LimitNOFILE=8192
+TimeoutStopSec=30min
+
+[Install]
+WantedBy=multi-user.target
