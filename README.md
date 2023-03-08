@@ -47,6 +47,28 @@ Testa se funziona
 ```bash
 bitcoin-cli getblockchaininfo
 ```
+### Tor
+
+```bash
+sudo apt install tor
+sudo systemctl status tor
+sudo nano /etc/tor/torrc
+```
+
+Copia e incolla le seguanti informazioni, infine salva
+
+```bash
+ControlPort 9051
+CookieAuthentication 1
+CookieAuthFileGroupReadable 1
+```
+```bash
+sudo systemctl restart  tor
+sudo systemctl xtatus tor
+sudo systemctl status tor
+sudo usermod -a -G debian-tor 'user'
+sudo systemctl restart bitcoind
+```
 
 ## Electrum Server
 
@@ -188,4 +210,19 @@ Nel caso di lightning potete comunque utilizzare il servizio presente nella cart
 ```bash
 Requires=bitcoind.service
 After=bitcoind.service
+```
+## Installazione Portainer
+
+```bash
+sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+```
+
+## Installazione Mempool Block Explorer
+
+Scarica la cartella mempool e edita il file all'interno inserendo le informazioni del tuo nood: IP, User, Password
+Infine lancia il comando
+
+```bash
+cd mempool
+docker compose up
 ```
