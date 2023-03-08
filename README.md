@@ -225,7 +225,7 @@ sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -
 
 ### Installazione Mempool Block Explorer
 
-Scarica la cartella mempool e edita il file all'interno inserendo le informazioni del tuo nood: IP, User, Password
+Scarica la cartella mempool e edita il file all'interno inserendo le informazioni del tuo nodo: IP, User, Password
 Infine lancia il comando
 
 ```bash
