@@ -56,7 +56,7 @@ sudo systemctl status tor
 sudo nano /etc/tor/torrc
 ```
 
-Copia e incolla le seguanti informazioni, infine salva
+Copia e incolla le seguenti informazioni, infine salva
 
 ```bash
 ControlPort 9051
