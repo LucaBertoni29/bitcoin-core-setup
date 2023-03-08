@@ -62,6 +62,8 @@ ControlPort 9051
 CookieAuthentication 1
 CookieAuthFileGroupReadable 1
 ```
+Riavvia il servizio
+
 ```bash
 sudo systemctl restart  tor
 sudo systemctl xtatus tor
